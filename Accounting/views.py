@@ -13,4 +13,4 @@ def create_tables(request):
             result = cursor.fetchall()
         except Exception as ex:
             error = str(ex)
-    return Response(error, status=status.HTTP_400_BAD_REQUEST)
+    return Response(error, status=status.HTTP_200_OK)
